@@ -1,0 +1,47 @@
+name: Daily Programmatic SEO Build
+
+on:
+  schedule:
+    # Triggers automatically every single day at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # Enables a manual "Run Workflow" button in your GitHub dashboard
+
+permissions:
+  contents: write  # Grants the automation loop access to modify and push files
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Clone your production workspace onto the cloud runner
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    # Step 2: Provision a clean Python environment
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    # Step 3: Execute build.py to overwrite 100 asset pages, sitemaps, and indexing components
+    - name: Execute Build Script
+      run: python build.py
+
+    # Step 4: Check for modifications, sign the build, and push it live to your static repository
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # Track all generated cinematic pSEO index frameworks
+        git add index.html blog/*.html sitemap.xml robots.txt llms.txt
+        
+        # Verify changes exist before attempting a push to avoid breaking empty commits
+        if git diff-index --quiet HEAD --; then
+          echo "No new asset changes or date stamps detected across the index today."
+        else
+          git commit -m "automation loop: automated 2026 pSEO build refresh"
+          git push
+        fi
