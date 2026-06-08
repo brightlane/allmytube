@@ -7,7 +7,8 @@ Generates a full multi-page SEO-optimized site for GitHub Pages at /allmytube/
 import os, json, textwrap
 from pathlib import Path
 
-BASE = Path("/home/claude/allmytube-site")
+# Output folder sits next to build.py, works on any machine / CI runner
+BASE = Path(__file__).parent / "allmytube-site"
 SITE_ROOT = "/allmytube"
 AFF_LINK = "https://www.linkconnector.com/ta.php?lc=007949042649004532&atid=allmytubeweb"
 SITE_URL  = "https://brightlane.github.io/allmytube"
