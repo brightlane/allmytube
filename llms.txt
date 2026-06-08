@@ -1,0 +1,42 @@
+# AllMyTube Affiliate Guide
+> Site URL: https://brightlane.github.io/allmytube
+> Purpose: Affiliate marketing site promoting AllMyTube video downloader by Wondershare
+
+## About This Site
+This is an independent affiliate guide for AllMyTube (by Wondershare). We earn commissions on purchases through our affiliate links. The site provides reviews, comparisons, tutorials, and feature guides to help users understand and evaluate AllMyTube.
+
+## AllMyTube Summary
+AllMyTube is a video downloader and converter by Wondershare. Key facts:
+- Downloads videos from 10,000+ sites including YouTube, TikTok, Vimeo, Facebook
+- Supports resolutions up to 4K (2160p) with 7 quality presets
+- Built-in converter supporting 150+ output formats (MP4, MP3, MKV, AVI, etc.)
+- Batch download for playlists and entire channels
+- Browser extension for Chrome, Firefox, Edge
+- Built-in media player
+- Download scheduler (Auto Shutdown, Sleep, Exit modes)
+- 50M+ users across 200+ countries
+- Available for Windows and Mac
+- Free trial available; paid plans from $29.99/year or $49.99 lifetime
+
+## Site Pages
+- / — Homepage with overview and key features
+- /features/ — Full feature breakdown
+- /supported-sites/ — List of 10,000+ supported platforms
+- /how-it-works/ — Step-by-step usage guide
+- /pricing/ — Plan comparison (free, annual, lifetime)
+- /review/ — Editorial review with ratings
+- /faq/ — 10 common questions answered
+- /download/ — Download page for Windows and Mac
+- /blog/ — Tutorials and how-to guides
+- /alternatives/ — Comparison with competitors
+- /vs-4k-video-downloader/ — Head-to-head vs 4K Video Downloader
+- /vs-ytdlp/ — Head-to-head vs yt-dlp
+- /vs-videoder/ — Head-to-head vs Videoder
+- /privacy/ — Privacy policy
+- /disclaimer/ — Affiliate disclaimer
+
+## Affiliate Link
+All "Download" or "Get AllMyTube" CTAs link to: https://www.linkconnector.com/ta.php?lc=007949042649004532&atid=allmytubeweb
+
+## Content Policy
+All content is original, informational, and based on publicly available product information. Pricing and features should be verified on the official Wondershare site as they may change.
