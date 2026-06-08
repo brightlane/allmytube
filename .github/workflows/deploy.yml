@@ -25,10 +25,21 @@ jobs:
       - name: Run build.py
         run: python3 build.py
 
+      - name: Prepare deploy folder
+        run: |
+          # Copy everything from allmytube-site/ up to a clean deploy/ folder
+          mkdir -p deploy
+          cp -r allmytube-site/. deploy/
+          # Verify index.html exists
+          ls deploy/index.html
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./allmytube-site
+          publish_dir: ./deploy
           publish_branch: gh-pages
           force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy AllMyTube site'
